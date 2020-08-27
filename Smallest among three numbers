@@ -1,0 +1,18 @@
+#To find the smallest among three numbers
+number1 = int(input('Enter first number :'))
+number2 = int(input('Enter second number :'))
+number3 = int(input('Enter third number :'))
+def smallest(num1, num2, num3):
+if(num < num2) and (num1 < num3):
+smallest_num = num2
+else:
+smallest_num = num3
+print("The smallest of the 3 numbers is : ",smallest_num)
+smallest(number1, number2, number3)
+
+
+output:
+Enter first number :15 
+Enter second number :30
+Enter third number :45
+The smallest of the 3 numbers is : 15
