@@ -1,0 +1,17 @@
+#Recursive funtion to return gcd of a and b 
+def gcd(a,b):
+if a ==0:
+return b 
+return gcd(b % a,a)
+
+# Function to return LCM of two numbers 
+def lcm(a,b):
+return (a*b) / gcd(a,b)
+
+#Driver program to test above funtion 
+a = 15
+b = 20 
+print('LCM of',a,'and','is',lcm(a,b))
+
+output:
+Lcm of 15 and 20 is 60
