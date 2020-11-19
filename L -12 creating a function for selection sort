@@ -1,0 +1,16 @@
+a = [64,25,55,78,96]
+def selection_sort(a):
+    for i in range(len(a)):
+
+        min = i
+        for j in range(i+1 , len(a)):
+            if a[min] > a[j]:
+                min = j
+# sswap the found element with first element
+        a[i],a[min] = a[min],a[i]
+print("unsorted list = ")
+print(a)
+selection_sort(a)
+
+print("sorted list =")
+print(a)
