@@ -1,0 +1,15 @@
+class Node:
+
+    def _init_(self, data):
+
+        self.left = None
+        self.right = None
+        self.data = data
+
+
+    def DispTree(self):
+        print(self.data)
+
+root = Node(11)
+
+root.DispTree()
